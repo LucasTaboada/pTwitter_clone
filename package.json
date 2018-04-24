@@ -4,7 +4,11 @@
   "description": "purrple twitter clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/LucasTaboada/pTwitter_clone/issues"
   },
-  "homepage": "https://github.com/LucasTaboada/pTwitter_clone#readme"
+  "homepage": "https://github.com/LucasTaboada/pTwitter_clone#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.16"
+  }
 }
