@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/LucasTaboada/pTwitter_clone#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
