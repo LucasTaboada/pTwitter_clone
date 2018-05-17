@@ -1,0 +1,20 @@
+.Nav{
+    background-color: white;
+    width:100%;
+    position: fixed;
+    height:45px;
+    box-shadow: 0 0 10px black;
+    top:0;
+    color:#14171a;
+    &__List{
+        display: flex;
+        width:30%;
+        justify-content: space-between;
+        list-style: none;
+    
+    }
+    &__ListItem{
+
+    }
+}
+
