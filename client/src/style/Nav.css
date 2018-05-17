@@ -1,4 +1,6 @@
 .Nav{
 width:100%;
-
+position: fixed;
+height: 130px;
+box-shadow: 0 0 30px black;
 }
