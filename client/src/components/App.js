@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Nav from './Nav.js';
 class App extends Component {
   render() {
     return (
       <div className="App">
+       <Nav/>
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
